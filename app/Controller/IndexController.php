@@ -20,7 +20,7 @@ class IndexController extends AbstractController
 
         return [
             'method' => $method,
-            'message' => "Hello {$user}.",
+            'message' => "Welcome {$user}.",
         ];
     }
 
@@ -31,8 +31,8 @@ class IndexController extends AbstractController
 //        $client->connect('127.0.0.1', 9504);
 //        $client->connect('127.0.0.1', 9504, 10);
 
-        $ip = $this->request->input('ip', '192.168.1.104');
-        $port = $this->request->input('ip', 8899);
+        $ip = $this->request->input('ip', '192.168.31.76');
+        $port = (int)$this->request->input('port', 8899);
         $msg = $this->request->input('msg', 'true');
 
         $client->connect($ip, $port, 30);
