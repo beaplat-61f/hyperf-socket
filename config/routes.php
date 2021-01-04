@@ -14,6 +14,9 @@ use Hyperf\HttpServer\Router\Router;
 Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController@index');
 Router::addRoute('GET', '/connect', 'App\Controller\IndexController@connect');
 
+// 这是b加的
+// 这也是b加的
+
 Router::get('/favicon.ico', function () {
     return '';
 });
