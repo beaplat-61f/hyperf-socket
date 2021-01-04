@@ -16,6 +16,9 @@ Router::addRoute('GET', '/connect', 'App\Controller\IndexController@connect');
 
 // 这是user a加的
 
+// 这是b加的
+// 这也是b加的
+
 Router::get('/favicon.ico', function () {
     return '';
 });
